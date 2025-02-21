@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Component</title>
+    <style>
+        /* Reset styles */
+        * { 
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Background styling */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #D5E1EF;
+        }
+
+        /* Wrapper for desktop layout */
+        .wrapper {
+            width: 70%;
+            max-width: 900px;
+            background-color: #E3ECF5;
+            padding: 50px 0;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Card container */
+        .card {
+            width: 320px;
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* QR Code styling */
+        .qr-code {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        /* Text container */
+        .text {
+            margin-top: 15px;
+        }
+
+        .text h3 {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .text p {
+            font-size: 14px;
+            color: #777;
+            margin-top: 8px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .wrapper {
+                width: 90%;
+                padding: 30px 0;
+            }
+            .card {
+                width: 280px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="card">
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://www.frontendmentor.io" alt="QR Code" class="qr-code">
+            <div class="text">
+                <h3>Improve your front-end skills by building projects</h3>
+                <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
